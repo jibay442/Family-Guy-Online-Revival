@@ -28,4 +28,14 @@ If you happen to have an issue, Dispute, or in need of assistance.
 My Contact Email is: wegj1@hotmail.com
 ```
 
+## Revival — playable prototype
+
+The [`revival/`](revival/README.md) folder holds a playable prototype rebuilt from these assets: explore Quahog and the Griffin house, in co-op over the local network.
+
+```
+./launch.sh        # Linux / macOS (Windows: launch.bat) — requires Node.js 20+
+```
+
+A detailed analysis of the archive (what can be rebuilt and what is missing) is in [`docs/ANALYSIS.md`](docs/ANALYSIS.md).
+
 ![](https://i.pinimg.com/originals/63/95/bc/6395bca7e3646181e962b3a445ae4223.jpg)

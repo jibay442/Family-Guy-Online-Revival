@@ -1,0 +1,19 @@
+{
+  "name": "family-guy-online-revival",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Playable Family Guy Online prototype rebuilt from the extracted assets, with a co-op server.",
+  "scripts": {
+    "start": "node launcher.mjs",
+    "server": "node server.mjs",
+    "manifest": "node tools/build-manifest.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "three": "^0.186.1",
+    "ws": "^8.22.0"
+  }
+}

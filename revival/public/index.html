@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Family Guy Online — Revival</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "/vendor/three/build/three.module.js",
+        "three/addons/": "/vendor/three/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <canvas id="view"></canvas>
+
+  <section id="menu" class="panel">
+    <h1>Family Guy Online <span>Revival</span></h1>
+    <p class="sub">Co-op prototype rebuilt from the original assets</p>
+
+    <label>Name
+      <input id="name" maxlength="20" autocomplete="off" placeholder="Peter">
+    </label>
+    <label>Character
+      <select id="character"></select>
+    </label>
+    <label>Area
+      <select id="map"></select>
+    </label>
+
+    <button id="play" disabled>Loading manifest…</button>
+
+    <div class="invite">
+      <strong>Multiplayer</strong>
+      <p>Friends on the same network open <code id="invite-url"></code>
+        (using the IP address shown in the launcher's terminal instead of <em>localhost</em>).</p>
+    </div>
+  </section>
+
+  <section id="loading" class="panel hidden">
+    <p id="loading-text">Loading…</p>
+    <div class="bar"><div id="loading-bar"></div></div>
+  </section>
+
+  <section id="hud" class="hidden">
+    <div id="info"></div>
+    <div id="players"></div>
+    <div id="chat">
+      <ul id="chat-log"></ul>
+      <input id="chat-input" class="hidden" maxlength="200" placeholder="Message… (Enter to send, Esc to cancel)">
+    </div>
+    <div id="help">
+      <b>WASD</b> move · <b>Shift</b> run · <b>Space</b> jump · <b>click</b> mouse look ·
+      <b>wheel</b> zoom · <b>Enter</b> chat · <b>1-4</b> emotes · <b>M</b> music · <b>Esc</b> menu
+    </div>
+  </section>
+
+  <script type="module" src="game.js"></script>
+</body>
+</html>
